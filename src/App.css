@@ -36,3 +36,27 @@
     transform: rotate(360deg);
   }
 }
+
+
+.login{
+  background-color: black;
+  color: white;
+}
+
+.header{
+
+}
+
+.body{
+  background-color: orange;
+  overflow: hidden;
+  transition: 0.2s;
+}
+.body.hide{
+ position: fixed;
+ bottom: 0;
+ right: 0;
+ left: 0;
+ top: 0;
+ z-index: 99999;
+}
