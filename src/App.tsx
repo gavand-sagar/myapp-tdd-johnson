@@ -10,6 +10,7 @@ import AsyncTesting from './AsyncTesting';
 import ReduxComponent from './ReduxComponent';
 import { Route, Routes, useNavigate } from 'react-router-dom';
 import Login from './Login';
+import Dashboard from './Dashboard';
 
 function App() {
   const [lang, setLang] = useState('en')
@@ -22,11 +23,12 @@ function App() {
   }
   return (
     <div className="App">
+      <button onClick={() => navigate('/login')}>NAV</button>
       <Routes>
         <Route path='/login' element={<Login />}></Route>
         <Route path='/counter' element={<Counter />}></Route>
+        <Route path='/dashboard' element={<Dashboard />}></Route>
       </Routes>
-      <button onClick={() => navigate('/login')}>NAV</button>
       {/* <AsyncTesting/> */}
       {/* <select onChange={(e) => setLang(e.target.value)}>
         <option value={'en'}>ENG</option>
