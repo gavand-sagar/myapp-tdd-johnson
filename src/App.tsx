@@ -23,12 +23,13 @@ function App() {
   }
   return (
     <div className="App">
-      <button onClick={() => navigate('/login')}>NAV</button>
+      <ReduxComponent/>
+      {/* <button onClick={() => navigate('/login')}>NAV</button>
       <Routes>
         <Route path='/login' element={<Login />}></Route>
         <Route path='/counter' element={<Counter />}></Route>
         <Route path='/dashboard' element={<Dashboard />}></Route>
-      </Routes>
+      </Routes> */}
       {/* <AsyncTesting/> */}
       {/* <select onChange={(e) => setLang(e.target.value)}>
         <option value={'en'}>ENG</option>

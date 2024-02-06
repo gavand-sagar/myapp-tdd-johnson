@@ -18,7 +18,7 @@ export default function ReduxComponent({ }: Props) {
         <div>{
             value
         }
-        <button onClick={handleClick}>+</button>
+        <button onClick={handleClick}>PLUS</button>
         </div>
     )
 }
