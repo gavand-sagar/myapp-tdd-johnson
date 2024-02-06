@@ -27,6 +27,7 @@ test('output label exists', () => {
     expect(label).toBeInTheDocument();
 });
 
+const listOfINputandOUTPU = []
 
 test('check addition', () => {
     render(<Calculator />)
