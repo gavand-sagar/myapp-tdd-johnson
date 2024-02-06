@@ -1,13 +1,15 @@
 import React, { useState } from 'react'
+import { GetAsyncDataAfter15Seconds, getCatFact } from './AsyncCall'
 
 export default function AsyncTesting() {
 
     const [value, setValue] = useState('')
 
     function handleClick() {
-        setTimeout(()=>{
-            setValue("Apple")
-        },15000)
+        getCatFact()
+        .then((x)=>{
+            setValue(x.fact);
+        })
     }
 
     return (

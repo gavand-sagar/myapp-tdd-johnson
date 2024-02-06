@@ -2,6 +2,7 @@ import { render, screen, fireEvent } from '@testing-library/react';
 import Counter from './Counter';
 
 test('Increment button should exist', () => {
+    
     render(<Counter />);
     const button = screen.getByTestId("btn-inc");
     expect(button).toBeInTheDocument();

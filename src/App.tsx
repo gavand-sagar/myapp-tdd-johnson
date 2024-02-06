@@ -6,6 +6,10 @@ import Calculator from './Calculator';
 import ExpandCollapse from './ExpandCollapse';
 import MultipleLanguage from './MultipleLanguage';
 import UserInformation from './UserInformation';
+import AsyncTesting from './AsyncTesting';
+import ReduxComponent from './ReduxComponent';
+import { Route, Routes } from 'react-router-dom';
+import Login from './Login';
 
 function App() {
   const [lang, setLang] = useState('en')
@@ -16,7 +20,11 @@ function App() {
   }
   return (
     <div className="App">
-      <UserInformation/>
+      <Routes>
+        <Route path='/login' element={<Login />}></Route>
+        <Route path='/dashboard' ></Route>
+      </Routes>
+      {/* <AsyncTesting/> */}
       {/* <select onChange={(e) => setLang(e.target.value)}>
         <option value={'en'}>ENG</option>
         <option value={'mr'}>MAR</option>
