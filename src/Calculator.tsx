@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { myAdd } from './MathUtils';
 
 export default function Calculator() {
     const [input1, setInput1] = useState('')
@@ -12,7 +13,7 @@ export default function Calculator() {
             setResult("Enter a value");
             return;
         }
-        setResult((Number(input1) + Number(input2)).toString())
+        setResult(myAdd(input1,input2))
     }
 
     return (
