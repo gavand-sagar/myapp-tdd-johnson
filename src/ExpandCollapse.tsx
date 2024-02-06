@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 
 export default function ExpandCollapse() {
     const [expand, setExpand] = useState(true)
+
     return (
         <div>
             <div className='header'  >
