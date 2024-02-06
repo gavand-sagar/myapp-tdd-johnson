@@ -5,6 +5,8 @@ type propType = {
     max?: number
 }
 
+//sdjkklsjdf
+
 export default function Counter({ max = 5 }: propType) {
 
     let [value, setValue] = useState(0);
